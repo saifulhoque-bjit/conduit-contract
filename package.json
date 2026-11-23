@@ -1,0 +1,16 @@
+{
+  "name": "conduit-contract",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Conduit API contract that conduit-api serves and conduit-web reads: the OpenAPI spec and an example of each payload.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "yaml": "2.8.1"
+  }
+}
