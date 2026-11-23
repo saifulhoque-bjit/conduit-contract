@@ -554,6 +554,7 @@ components:
         - tagList
         - title
         - updatedAt
+        - wordCount
       type: object
       properties:
         slug:
@@ -578,6 +579,11 @@ components:
           type: boolean
         favoritesCount:
           type: integer
+        # SPEC: spec-2ec0d2
+        wordCount:
+          type: integer
+          minimum: 0
+          readOnly: true
         author:
           $ref: '#/components/schemas/Profile'
     NewArticle:
@@ -721,6 +727,7 @@ components:
                     - tagList
                     - title
                     - updatedAt
+                    - wordCount
                   type: object
                   properties:
                     slug:
@@ -743,6 +750,11 @@ components:
                       type: boolean
                     favoritesCount:
                       type: integer
+                    # SPEC: spec-2ec0d2
+                    wordCount:
+                      type: integer
+                      minimum: 0
+                      readOnly: true
                     author:
                       $ref: '#/components/schemas/Profile'
               articlesCount:
