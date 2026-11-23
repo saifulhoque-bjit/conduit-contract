@@ -550,6 +550,7 @@ components:
         - description
         - favorited
         - favoritesCount
+        - readingTimeMinutes
         - slug
         - tagList
         - title
@@ -578,6 +579,11 @@ components:
           type: boolean
         favoritesCount:
           type: integer
+        # SPEC: spec-aabc69
+        readingTimeMinutes:
+          type: integer
+          minimum: 1
+          readOnly: true
         author:
           $ref: '#/components/schemas/Profile'
     NewArticle:
